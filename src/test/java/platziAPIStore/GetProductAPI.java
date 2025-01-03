@@ -39,7 +39,7 @@ public class GetProductAPI {
 		
 		Response response = given().log().all()
 							.header("accept", "*/*")
-							.basePath("/2")
+							.basePath("/139")
 							.when()
 							.get();
 		

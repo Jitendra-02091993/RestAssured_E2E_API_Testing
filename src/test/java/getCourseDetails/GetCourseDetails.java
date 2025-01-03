@@ -11,6 +11,7 @@ public class GetCourseDetails extends GetAccessTokenFromAuthorizationServer{
 
 	@Test(dataProvider = "accessToken")
 	public void getCourseDetails(String accessToken) {
+		System.out.println("accessToken is==========: "+accessToken);
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 		String basePath = "/oauthapi/getCourseDetails";
 		// ?access_token=33VQpwS9fnn7uqz04HqVXg==

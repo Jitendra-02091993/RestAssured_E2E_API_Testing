@@ -33,13 +33,13 @@ public class GetAccessTokenFromAuthorizationServer extends helperUtils{
 		
 		response.then().assertThat().statusCode(200);
 		JsonPath parse = rawToJSON(responseBody);
-		globalVariable.access_Tocken = parse.get("access_token");
-		System.out.println("access_Tocken is: "+globalVariable.access_Tocken);
+		globalVariable.access_Token = parse.get("access_token");
+		System.out.println("access_Tocken is: "+globalVariable.access_Token);
 	}
 	
 	@DataProvider(name = "accessToken")
 	public Object[] access_Token() {
-		return new Object [] {globalVariable.access_Tocken};
+		return new Object [] {globalVariable.access_Token};
 	}
 
 }

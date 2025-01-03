@@ -10,5 +10,8 @@ public class globalVariable {
 	public static String client_secret = "erZOWM9g3UtwNRj340YYaK_W";
 	public static String grant_type = "client_credentials";
 	public static String scope = "trust";
-	public static String access_Tocken="";
+	public static String access_Token="";
+	public static String refresh_Token="";
+	public static String email= "john@mail.com";
+	public static String password = "changeme";
 }
